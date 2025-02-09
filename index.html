@@ -7,54 +7,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
         <div class="nav">
-            <div class="top">
-                <div class="searchbar">
-                    <input type="text" class="search">
-                </div>
-                <div class="notification">N</div>
-                <div class="user">
-                    <div class="pfp">IMG</div>
-                    <div class="username">Morgan Oakley</div>
-                </div>
+
+            <div class="searchbar">
+                <img class="svg" src="images/svg/magnify.svg" alt="SEARCH">
+                <input type="text" id="search" name="searchBar">
             </div>
 
-            <div class="bottom">
-                <div class="welcome">
-                    <div class="pfp">IMG</div>
+            <div class="loggedUser">
+                <img class="svg" src="images/svg/bell-ring-outline.svg" alt="Notifications">
+                <img class="pfp" src="images/Justyna.png" alt="pfpIMG">
+                <div class="username">Morgan Oakley</div>
+            </div>
+
+            <div class="welcome">
+                <img class="pfp large" src="images/Justyna.png" alt="pfpIMG">
+
+                <div class="greetingText">
                     <div class="greeting">Hi there,</div>
                     <div class="username">Morgan Oakley (@morgan)</div>
-                </div>
-
-                <div class="headButtons">
-                    <div class="new">New</div>
-                    <div class="upload">Upload</div>
-                    <div class="share">Share</div>
-                </div>
+                </div>  
             </div>
+
+            <div class="headButtons">
+                <div class="btn">New</div>
+                <div class="btn">Upload</div>
+                <div class="btn">Share</div>
+            </div>
+
         </div>
 
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div class="logo">
+                <img class="svg white" src="images/svg/view-dashboard.svg" alt="">
+                <div>Dashboard</div>
+            </div>
             <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    
+                    <li>
+                        <img class="svg inline white" src="images/svg/home.svg" alt="Home">
+                        <div>Home</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/card-account-details-outline.svg" alt="Profile">
+                        <div>Profile</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/message-reply.svg" alt="Messages">
+                        <div>Messages</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/clock-time-three.svg" alt="History">
+                        <div>History</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/file-multiple.svg" alt="Tasks">
+                        <div>Tasks</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/account-group.svg" alt="Communities">
+                        <div>Communities</div>
+                    </li>
                 </ul>
             </div>
             <div class="options">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/cog.svg" alt="Settings">
+                        <div>Settings</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/help-box.svg" alt="Support">
+                        <div>Support</div>
+                    </li>
+                    <li>
+                        <img class="svg inline white" src="images/svg/shield-check.svg" alt="Privacy">
+                        <div>Privacy</div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -63,70 +97,73 @@
             <div class="projects">
                 <div class="header">Your Projects</div>
 
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="title">Super Cool Project</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
+                        <div class="buttons">
+                            <img class="svg small" src="images/svg/star-plus-outline.svg" alt="Star">
+                            <img class="svg small" src="images/svg/eye-plus-outline.svg" alt="Views">
+                            <img class="svg small" src="images/svg/source-fork.svg" alt="Fork">
+                        </div>
                     </div>
                 </div>
-
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="title">Super Cool Project</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, commodi!</p>
-                    <div class="buttons">
-                        <div class="star">S</div>
-                        <div class="views">V</div>
-                        <div class="branch">B</div>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="announcements">
                 <div class="header">Announcements</div>
-                <div class="container">
+                <div class="announcementList">
                     <div class="announcement">
                         <div class="title">
                             Site Maintenance
@@ -134,12 +171,16 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptates.</p>
                     </div>
 
+                    <hr>
+
                     <div class="announcement">
                         <div class="title">
                             Site Maintenance
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptates.</p>
                     </div>
+
+                    <hr>
 
                     <div class="announcement">
                         <div class="title">
@@ -154,27 +195,36 @@
                 <div class="header">Trending</div>
                 <div class="userlist">
                     <div class="user">
-                        <div class="pfp">IMG</div>
-                        <div class="username">@tegan</div>
-                        <div class="description">World Peace Builder</div>
+                        <img class="pfp" src="images/Justyna.png" alt="pfpIMG">
+                        <div class="userInfo">
+                            <div class="username">@tegan</div>
+                            <div class="description">World Peace Builder</div>
+                        </div>
+                        
                     </div>
 
                     <div class="user">
-                        <div class="pfp">IMG</div>
-                        <div class="username">@tegan</div>
-                        <div class="description">World Peace Builder</div>
+                        <img class="pfp" src="images/Justyna.png" alt="pfpIMG">
+                        <div class="userInfo">
+                            <div class="username">@tegan</div>
+                            <div class="description">World Peace Builder</div>
+                        </div>
                     </div>
 
                     <div class="user">
-                        <div class="pfp">IMG</div>
-                        <div class="username">@tegan</div>
-                        <div class="description">World Peace Builder</div>
+                        <img class="pfp" src="images/Justyna.png" alt="pfpIMG">
+                        <div class="userInfo">
+                            <div class="username">@tegan</div>
+                            <div class="description">World Peace Builder</div>
+                        </div>
                     </div>
 
                     <div class="user">
-                        <div class="pfp">IMG</div>
-                        <div class="username">@tegan</div>
-                        <div class="description">World Peace Builder</div>
+                        <img class="pfp" src="images/Justyna.png" alt="pfpIMG">
+                        <div class="userInfo">
+                            <div class="username">@tegan</div>
+                            <div class="description">World Peace Builder</div>
+                        </div>
                     </div>
                 </div>
                 

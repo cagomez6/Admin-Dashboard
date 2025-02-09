@@ -5,40 +5,282 @@
   }
 
 .container {
-    height:100%;
-    background-color: darkcyan;
+    height:100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: lightgray;
 }
 
 .nav {
-    background-color: lightgreen;
+    background-color: white;
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    gap:15px;
+    box-shadow: 0 4px 8px -2px gray;
+}
+
+.searchbar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    border: none;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#search {
+    border-radius: 50px;
+    padding: 8px;
+    font-weight: 600;
+    flex:1;
+
+}
+
+.loggedUser {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    gap: 30px;
+}
+
+.welcome {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.greetingText {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.greetingText > .username {
+    font-size: 1.3em;
+}
+
+.headButtons {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: flex;
+    align-items: center;
+
+    justify-self: end;
+    gap: 30px;
+}
+
+.headButtons > div {
+    margin: 10px;
 }
 
 .sidebar {
-    background-color: lightsteelblue;
+    background-color: rgb(73, 203, 255);
+    color: white;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
 
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    padding: 10px;
 }
 
+.menu > ul, .options > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+.menu > ul > li, .options > ul > li {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 12px;
+}
 .main {
-    background-color: lightgray;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+
+    padding: 10px;
 }
 
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
+    margin: 10px;
+}
+
+.cards{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+
+    border-left: 20px solid rgb(255, 207, 48);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px -2px gray;
+}
+
+.card > .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+}
+
+.announcementList {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+
+    justify-content: space-between;
+    border-radius: 15px;
+
+    padding: 30px;
+    box-shadow: 0 4px 8px -2px gray;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.userlist {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100%;
+    justify-content: space-between;
+
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px -2px gray;
+}
+
+.user {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    font-weight: bolder;
+    font-size: 2em;
+    align-items: center;
+    gap: 10px;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.card > .title {
+    font-weight: bold;
+}
+
+.announcement > .title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.userInfo > .username {
+    font-weight: bold;
+}
+
+.pfp {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.large {
+    height: 100px;
+}
+
+/* .icon {
+    color: white;
+    height: 50px;
+} */
+
+.svg {
+    height: 2em;
+}
+
+.headButtons {
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    text-align: center;
+    width: 6rem;
+    background-color: rgb(73, 203, 255);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 1.2em;
+}
+
+.white {
+    filter: invert(100%) sepia(0%) saturate(7457%) hue-rotate(220deg) brightness(117%) contrast(102%);
+}
+
+.small {
+    height: 1.5em;
 }
